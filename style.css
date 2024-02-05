@@ -12,7 +12,8 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23fa0000' fill-opacity='1'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
     font-family: "Honk", system-ui;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 700;
+    /* font-size: 50px; */
     font-style: normal;
     font-variation-settings:
         "MORF" 15,
@@ -21,4 +22,78 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.quote-container {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.4);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+    font-size: 2.75rem;
+}
+
+.long-quote {
+    font-size: 2rem;
+}
+
+.fa-quote-left {
+    font-size: 4rem;
+}
+
+.quote-author {
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 0, 0);
+    background: rgb(0, 0, 0);
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+    filter: brightness(125%);
+}
+
+button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+    color: #38a1f3;
+}
+
+.fa-x-twitter {
+    font-size: 1.5rem;
+}
+
+/* Media Query: Tablet/Smaller */
+@media screen and (max-width: 1000px) {
+    .quote-container {
+        margin: auto 10px;
+    }
+    .quote-text {
+        font-size: 2.5rem;
+    }
 }
